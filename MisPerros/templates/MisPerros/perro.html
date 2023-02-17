@@ -21,6 +21,15 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'MisPerros/css/styles.css' %}" rel="stylesheet" />
+        <style>
+            .btn{
+                display:block;
+                background-color: blue;
+                border-radius:10px;
+                padding:15px 70px;
+                color:white;
+}
+        </style>
     </head>
     <body>
         <!-- Navigation-->
@@ -32,22 +41,7 @@
                         <div class="text-center text-white">
                             <!-- Page heading-->
                             <h1 class="mb-5"> Perros </h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            {% if myform.errors %}
-                            <p style="color: red;"> Datos ingresados de manera incorrecta </p>
-                            {% endif %}
-                            <form action="" method="POST">{% csrf_token %}
-                                <table>
-                                    {{ myform.as_table }}
-                                </table>
-                                <input type="submit", value="Enviar">
+                                <a class="btn" href="http://127.0.0.1:8000/PerroForm" > Registrar perros </a>
                             </form>
                                 <!-- Email address input-->
                                 <!-- Submit success message-->
